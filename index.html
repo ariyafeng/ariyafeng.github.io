@@ -1,7 +1,7 @@
 
 <html>
 <head>
-    <title>Ariya Feng</title>
+    <title>ariya</title>
     <link href = "mystyle.css"  rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap" rel="stylesheet">
@@ -10,6 +10,35 @@
 
 
 <body>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+    
     <nav>
         <ul>
             <li><a href="#contact">About</a></li>
@@ -27,17 +56,61 @@
         <div class="row">
             <div class="column">
                     <img id="logo" src="logo.png" height = "100px">
-                <p id="caption1">JQI is discovering properties of quantum physics as they
+                <p id="caption">JQI is discovering properties of quantum physics as they
                     become relevant in information science and technology. </p>
                 <p id="caption1">I created infographics and short animations for 
                     <a id="atlas" href="http://quantumatlas.umd.edu/" target="_blank">The Quantum Atlas: A Visual Guide to an Unseen World.</a></p>
             </div>
             <div class="column">
-                <h1></h1>
+                
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="info2.jpg" style="width:87%">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="info2.png" style="width:90%">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="info3.png" style="width:90%">
+                      <div class="text"></div>
+                    </div>
+
+                   
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="info4.png" style="width:90%">
+                      <div class="text"></div>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <div class="numbertext"></div>
+                      <img src="info1.png" style="width:85%">
+                      <div class="text"></div>
+                    </div>
+
+                </div>
+                    <br>
+
+                    <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span>
+                      <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+
             </div>
         </div>
-        
     </div>
+        
     <div id="section3">
         
         <div class="row">
@@ -79,7 +152,7 @@
             
             <div class="column">
                 <h3>About me</h3>
-                <p id="caption3">Hi, I'm Ariya (pronounced uh-ree-yuh). I grew up in Maryland and currently attend Cornell University in Ithaca, New York. I am studying Policy Analysis and Management and minoring in Design and Environmental Analysis.<br><br> My interests in policy actually came from writing my children's book and seeing the power that words had on people. As for design, I've always had a love for art and drawing and see design as a way of connecting people and art through real-life applications. And I care about the environment. A lot. So what could be a better combination than policy and environmental analysis? <br><br><br> Feel free to contact me at &nbsp <a id="linkedin" href="">ariyafeng@gmail.com </a><br>or connect with me on &nbsp<a id="linkedin" href="https://www.linkedin.com/in/ariyafeng/">LinkedIn.</a>
+                <p id="caption3">Hi, I'm Ariya (pronounced uh-ree-yuh). I grew up in Maryland and currently attend Cornell University in Ithaca, New York. I am studying Policy Analysis and Management and minoring in Design and Environmental Analysis — I know, a lot of analyzing.<br><br> My interests in policy actually came from writing my children's book and seeing the power that words had on people. As for design, I've always had a love for art and drawing and see design as a way of connecting people and art through real-life applications. And I care about the environment. A lot. So what could be a better combination than policy and environmental analysis? <br><br><br> Feel free to contact me at &nbsp <a id="linkedin" href="">ariyafeng@gmail.com </a><br>or connect with me on &nbsp<a id="linkedin" href="https://www.linkedin.com/in/ariyafeng/">LinkedIn.</a>
                 </p>
                  
             </div>
