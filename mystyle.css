@@ -3,7 +3,26 @@ html{
 }
 *{
     box-sizing: border-box;
+    margin: 0;
 }
+.column1{
+    float: left;
+    padding: 10px;
+ 
+}
+
+.left {
+  width: 40%;
+}
+.right{
+    width:60%;
+}
+.row1:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .column{
     float: left;
     width:50%;
@@ -37,7 +56,7 @@ ul{
     padding: 0;
     margin: 0;
     list-style: none;
-    text-align: center;
+    text-align: right;
     width: 100%;
     display: table;
 }
@@ -59,7 +78,17 @@ li{
     text-align: left;
 }
 #wmmb{
-    color:cadetblue;
+    color:lightgoldenrodyellow;
+    padding: none;
+    width: none;
+    display: inline;
+    margin-left: -22px;
+    text-decoration: none;
+    font-weight: normal;
+    text-align: left;
+}
+#crowd{
+    color:forestgreen;
     padding: none;
     width: none;
     display: inline;
@@ -111,38 +140,53 @@ ul li a:hover{
     box-shadow: inset 0 0px 0 white, inset 0 -1px 0 black
 }
 #about{
-    height: 200px;
+    height: 410px;
     background: white;
     display: inline-block;
     width: 100%;
 }
+#cornell {
+   margin-left: 300px;
+   margin-bottom: 100px;
+   opacity: .85;
+}
 #featured{
     height: 600px;
-    background: #96BAAF;
+    background: #FF785A;
     display: inline-block;
     width: 100%;
 }
 #section3{
     height: 500px;
-    background: #EAE0D5; 
+    background: #538EE8; 
     display: inline-block;
     width: 100%;
 }
 #section4{
     height: 600px;
-    background: #124482; 
+    background: #F2E782; 
+    display: inline-block;
+    width: 100%;
+}
+#section5{
+    height: 600px;
+    background: #7BD894;
     display: inline-block;
     width: 100%;
 }
 #contact{
-    height: 660px;
-    background: #F5CAC3; 
+    height: 750px;
+    background: white; 
     display: inline-block;
     width: 100%;
 }
 #logo{
     margin-left: 50px;
     margin-top: 100px;
+}
+#agualogo{
+    margin-left: 150px;
+    margin-top: 50px;
 }
 #nist{
     margin-left: 50px;
@@ -151,6 +195,10 @@ ul li a:hover{
 #pic{
     margin-left: 100px;
     margin-top: -20px;
+}
+#agua{
+    margin-left: 50px;
+    margin-top: 50px;
 }
 #caption{
     color: white;
@@ -163,28 +211,32 @@ ul li a:hover{
     margin-left: 50px;
 }
 #caption2{
-    color: cadetblue;
+    color: lightgoldenrodyellow;
     margin-top: 40px;
     margin-left: 50px;
    
 }
 #caption3{
-    color: dimgray;
+    color: black;
     margin-top: 50px;
     margin-left: 80px;
-    font-size: 17px;
 }
 #caption4{
+    color: forestgreen;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#caption5{
     color: white;
     margin-top: 10px;
-    margin-left: 70px;
+    margin-left: 50px;
 }
 #atlas{
     color:white;
 }
 #book{
-    margin-top: 130px;
-    margin-left: 50px;
+    margin-top: 90px;
+    margin-left: 0px;
 }
 #me{
     margin-top: 100px;
@@ -192,24 +244,32 @@ ul li a:hover{
 }
 
 h1{
-    text-transform: uppercase;
-    margin: 100px;
-    text-align: center;
+    margin: 50px;
+    text-align: left;
     padding: 0;
 }
 h2{
     font-size: 30px;
-    color:cadetblue;
+    color:lightgoldenrodyellow;
     margin-left: 50px;
     margin-top:50px;
 }
 h3{
     font-size: 30px;
-    color:dimgray;
+    color:black;
     margin-left:80px;
     margin-top:80px; 
 }
 
+h4{
+    font-size:20px;
+    margin-top: 170px;
+    margin-right: 50px;
+}
+h5{
+    margin-left: 100px;
+    color: lightgoldenrodyellow;
+}
 p{
     font-size: 20px;
     margin-top: -60px;
@@ -217,14 +277,9 @@ p{
     margin-right: 60px;
     font-family: 'Didact Gothic', sans-serif;
 }
-* {
-    box-sizing: border-box
-}
-body {
-    margin:0
-}
+
 .mySlides {
-    display: none
+    display: none;
 }
 img {
     vertical-align: middle;
@@ -235,7 +290,8 @@ img {
   max-width: 700px;
   position: relative;
   margin: auto;
-  margin-top: 80px;
+    margin-top: 70px;
+  
 }
 
 /* Next & previous buttons */
