@@ -75,21 +75,22 @@ h1, h2 {
     color: black;
     font-family: 'Permanent Marker', cursive;    
     text-align: center;
+    font-size: 50px;
 }
 
 ::-webkit-selection {
-  color: #fff;
-  background: #cabcab;
+  color: #000;
+  background: #F9F3A7;
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: #cabcab;
+  color: #000;
+  background: #F9F3A7;
 }
 
 ::selection {
-  color: #fff;
-  background: #cabcab;
+  color: #000;
+  background: #F9F3A7;
 }
 
 .fh5co-nav {
@@ -458,7 +459,7 @@ h1, h2 {
   padding: 40px;
 }
 .work .work-grid .inner .desc h3 {
-  font-size: 14px;
+  font-size: 17px;
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 5px;
@@ -469,14 +470,15 @@ h1, h2 {
   color: #000;
 }
 .work .work-grid .inner .desc .cat {
-  font-size: 11px;
+  font-size: 13px;
+  color: #5A9DFF;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 /*CAPTION*/
 @media screen and (max-width: 768px) {
   .work .work-grid .inner .desc .cat {
-    color: gray;
+    color: #5A9DFF;
   }
 }
 .work:hover .inner, .work:focus .inner {
@@ -489,27 +491,11 @@ h1, h2 {
 .top-line {
   padding-bottom: 7em;
 }
+
 .top-line .fh5co-heading {
   margin-bottom: 0 !important;
 }
 
-.categories {
-  padding: 0;
-  margin: 0;
-}
-.categories li {
-  font-family: "Montserrat", Arial, sans-serif;
-  list-style: none;
-  margin-bottom: 5px;
-}
-.categories li.cat {
-  color: #000;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-.categories li a:hover {
-  color: #000;
-}
 
 .intro h2 {
   font-size: 49px;
@@ -545,13 +531,13 @@ h1, h2 {
   letter-spacing: 1px;
   color: #000;
 }
-.fh5co-heading h3 {
-  font-size: 18px;
+.fh5co-heading h2 {
+  font-size: 30px;
 }
 .fh5co-heading p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
-  color: #828282;
+  color: black;
 }
 .fh5co-heading span {
   display: block;
@@ -615,6 +601,7 @@ h1, h2 {
   padding-right: 10px;
 }
 
+/*
 .skills h3 {
   font-size: 16px;
 }
@@ -634,6 +621,7 @@ h1, h2 {
   border-radius: 50px;
   background: #cabcab !important;
 }
+*/
 
 #fh5co-started {
   background: #cabcab;
@@ -1235,7 +1223,8 @@ h1, h2 {
 }
 .role h3 {
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 15px;
+  color: #5A9DFF;
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
@@ -1244,7 +1233,8 @@ h1, h2 {
   margin: 0;
 }
 .role ul li {
-  font-size: 14px;
+  font-size: 15px;
+    color: black;
   list-style: none;
   padding: 0;
   margin: 0 0 5px 0;
