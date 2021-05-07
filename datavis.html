@@ -121,7 +121,7 @@
     flex: 1;
   }
 
-  p {
+  #whr {
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
@@ -212,7 +212,7 @@
 
 
     <h2>World Happiness Levels</h2>
-  <p>
+  <p class="whr">
     The World Happiness Report is published by the UN Sustainable Development Solutions Network. It ranks national
     happiness based on respondents ratings of their lives, which correlates to several factors. One of these factors
     is life expectancy, which signifies the number of years that a person can expect to live. The map below plots and
@@ -220,8 +220,8 @@
     contribute to a country's happiness levels, including ladder score (overall happiness on a 0-10 scale), logged GDP
     per capita, social support, freedom to make life choices, and perceptions of corruption.
   </p>
-  <p> <b> Click on a measure and different countries to compare them! </b></p>
-  <p style="font-size:10px;"> *Happiness data is unavailable for countries whose bars don't show up upon click.</p>
+  <p class="whr"> <b> Click on a measure and different countries to compare them! </b></p>
+  <p class="whr" style="font-size:10px;"> *Happiness data is unavailable for countries whose bars don't show up upon click.</p>
   <div id="button-bar"></div>
   <div class="container1">
 
@@ -671,8 +671,12 @@
     data()
 
   </script>
-		
-		<p>Project for INFO3300, Data-Driven Web Pages.</p>
+		<div id="fh5co-author">
+		<div class="container">
+			<div class="row top-line animate-box">
+				<div class="col-md-6 col-md-offset-3 col-md-push-2 text-left fh5co-heading">
+			
+					<p>Project for INFO3300, Data-Driven Web Pages.</p>
                     <p>I worked with two partners to create an interactive visualization using datasets from
                      <a href="https://www.kaggle.com/ajaypalsinghlo/world-happiness-report-2021">Kaggle</a>.
                      The World Happiness Report 2021 is a dataset that contains metrics evaluating world happiness
@@ -695,6 +699,10 @@
 							<li>May 2021</li>
 						</ul>
 					</div>
+				</div>
+			</div>
+		</div>
+		</div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
