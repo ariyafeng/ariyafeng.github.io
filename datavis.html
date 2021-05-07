@@ -1,0 +1,710 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Ariya Feng</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="af.png"/>
+	<!--
+	//////////////////////////////////////////////////////
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FreeHTML5.co
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet"> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://d3js.org/topojson.v3.min.js"></script>
+
+
+	</head>
+<style>
+.countries {
+    fill: lightgrey;
+  }
+
+  .countryoutline {
+    stroke: darkgray;
+    stroke-width: 1px;
+    fill: none;
+  }
+
+  .outline {
+    stroke: black;
+    stroke-width: 1px;
+    fill: none;
+  }
+
+  .mouseover {
+    stroke-width: 1px;
+    pointer-events: none;
+    fill: none;
+  }
+
+  .worldoutline {
+    stroke: black;
+    stroke-width: 3px;
+    fill: none;
+  }
+
+  #button-bar button {
+    background-color: #003366;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+  }
+
+  #button-bar button:hover {
+    background-color: steelblue;
+  }
+
+  #button-bar button:focus {
+    background-color: #cc5500;
+  }
+
+  #button-bar {
+    margin-left: 18%;
+    margin-bottom: 30px;
+
+  }
+
+  .container {
+    display: flex;
+  }
+
+  .child {
+    flex: 1;
+  }
+
+  p {
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 16px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  body {
+    font-family: Helvetica, sans-serif;
+
+  }
+
+  #mlabel {
+    font-size: 16px;
+  }
+
+  #bartitle {
+    display: inline-block;
+    text-align: center;
+    margin-left: 35%;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+</style>
+	<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+    <nav class="fh5co-nav" role="navigation">
+		<div class="container">
+			<div class="fh5co-top-logo">
+<!--				<div id="fh5co-logo"><a href="index.html">home</a></div>-->
+			</div>
+			<div class="fh5co-top-menu menu-1 text-center">
+				<ul>
+					<li><a href="index.html">Work</a></li>
+					<li><a href="index.html#author">About</a></li>
+					<li class="has-dropdown">
+						<a href="#">Fun</a>
+
+					</li>
+					<li><a href="resume.pdf" target="_blank">Resume</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</nav>
+
+	<div id="fh5co-author">
+		<div class="container">
+			<div class="row top-line animate-box">
+				<div class="col-md-6 col-md-offset-3 col-md-push-2 text-left fh5co-heading">
+					<h2>World Happiness Levels</h2>
+					<p>Project for INFO3300, Data-Driven Web Pages.</p>
+                    <p>I worked with two partners to create an interactive visualization using datasets from
+                     <a href="https://www.kaggle.com/ajaypalsinghlo/world-happiness-report-2021">Kaggle</a>.
+                     The World Happiness Report 2021 is a dataset that contains metrics evaluating world happiness
+                     levels by country. The values take into account the country's government, organizations, civil
+                     society, economics, public policy, health, and more. The ladder score column is the overall
+                     happiness level of the country, and the other metrics in this dataset are logged GDP per capita,
+                     social support, freedom to make life choices, generosity, and more. </p>
+					<p class="animate-box"><img src="images/book.jpg" class="img-responsive" alt="book"></p>
+					<div class="role">
+						<h3>Skills</h3>
+						<ul>
+							<li>Data Analysis</li>
+							<li>Interactive Visualization</li>
+                            <li>HTML/CSS</li>
+                            <li>Javascript</li>
+						</ul>
+					</div>
+					<div class="role">
+						<h3>Timeline</h3>
+						<ul>
+							<li>May 2021</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+    <h2>World Happiness Levels</h2>
+  <p>
+    The World Happiness Report is published by the UN Sustainable Development Solutions Network. It ranks national
+    happiness based on respondents ratings of their lives, which correlates to several factors. One of these factors
+    is life expectancy, which signifies the number of years that a person can expect to live. The map below plots and
+    displays the overall average life expectancy of each country. The bar graph on the right has other factors that
+    contribute to a country's happiness levels, including ladder score (overall happiness on a 0-10 scale), logged GDP
+    per capita, social support, freedom to make life choices, and perceptions of corruption.
+  </p>
+  <p> <b> Click on a measure and different countries to compare them! </b></p>
+  <p style="font-size:10px;"> *Happiness data is unavailable for countries whose bars don't show up upon click.</p>
+  <div id="button-bar"></div>
+  <div class="container">
+
+    <div class="child">
+
+      <svg id="choropleth" height="450" width="700">
+        <text id="label" x="52" y="15" text-anchor="start" alignment-baseline="hanging"></text>
+      </svg>
+      <div>
+        <svg id="colorLegend" height="100" width="700" style=" margin-top:30px; margin-left:5%"></svg>
+        <p style="margin-top:-5px"> Life Expectancy in Years<p>
+      </div>
+    </div>
+    <div class="child">
+
+      <div>
+        <text id="bartitle" text-anchor="end" alignment-baseline="hanging"></text>
+        <svg id="barchart" height="600" style="margin:20px" width="700">
+          <text id="mlabel" x="600" y="20" text-anchor="end" alignment-baseline="hanging"></text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    // map
+    const svg = d3.select("svg#choropleth");
+    const width = svg.attr("width");
+    const height = svg.attr("height");
+    const map = svg.append("g");
+
+    // datasets from https://www.kaggle.com/amansaxena/lifeexpectancy and
+    // https://www.kaggle.com/ajaypalsinghlo/world-happiness-report-2021
+
+    const data = async function () {
+      const world = await d3.json("noantarctica.json");
+      const lifeExpectancy = await d3.csv("Life_expectancy_dataset.csv");
+      const happinessData = await d3.csv("world-happiness-report-2021.csv", d3.autoType);
+
+      happinessData.forEach(d => {
+        if (d["Country name"] == "United States") {
+          d["Country name"] = "United States of America";
+        }
+      });
+      // console.log(world);
+
+      var countries = topojson.feature(world, world.objects.countries1);
+      var countriesMesh = topojson.mesh(world, world.objects.countries1);
+      var projection = d3.geoMercator().fitSize([width, height], countries);
+      var path = d3.geoPath().projection(projection);
+
+      map.selectAll("path.countries").data(countries.features)
+        .join("path")
+        .attr("class", "countries")
+        .attr("note", d => d.id)
+        .attr("d", path)
+        .on("click", d => updateBarsAnimated(d)); //when country is clicked, update bar graph
+
+      map.append("path").datum(countriesMesh)
+        .attr("class", "countryoutline")
+        .attr("d", path);
+
+      let countryData = {};
+      let idToCountry = {};
+
+      // map overall life expectancy to corresponding country
+      lifeExpectancy.forEach(d => {
+        countryData[d["Country"]] = Number(d["Overall Life"]);
+      });
+
+      // map country name to country id; if country doesn't exist, in data,
+      // value is N/A
+      var worldData = world.objects.countries1.geometries;
+      worldData.forEach(row => {
+        idToCountry[row.id] = row.properties.name;
+        if (!(row.properties.name in countryData)) {
+          countryData[row.properties.name] = "N/A";
+        }
+      });
+
+      const minMax = d3.extent(Object.values(countryData));
+
+      const colorScale = d3.scaleSequential(d3.interpolatePuBu).domain(minMax);
+
+      map.selectAll(".countries").style("fill", d => colorScale(countryData[idToCountry[d.id]]));
+      drawLegend(d3.select("#colorLegend"), colorScale);
+
+      // add tooltip
+      let tooltipWidth = 200;
+      let tooltipHeight = 40;
+
+      let tooltip = map.append("g")
+        .attr("class", "tooltip")
+        .attr("visibility", "hidden");
+      tooltip.append("rect")
+        .attr("fill", "black")
+        .attr("opacity", 0.9)
+        .attr("x", -tooltipWidth / 2.0)
+        .attr("y", 0)
+        .attr("width", tooltipWidth)
+        .attr("height", tooltipHeight)
+      let txt = tooltip.append("text")
+        .attr("fill", "white")
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "hanging")
+        .attr("x", 0)
+        .attr("y", 2);
+      let txt2 = tooltip.append("text")
+        .attr("fill", "white")
+        .attr("text-anchor", "middle")
+        .attr("alignment-baseline", "hanging")
+        .attr("x", 0)
+        .attr("y", 22);
+
+      let momesh = map.append("path")
+        .attr("class", "mouseover outline")
+        .attr("d", "");
+
+
+      d3.selectAll(".countries").on("mouseenter", mouseEntersPlot);
+      d3.selectAll(".countries").on("mouseout", mouseLeavesPlot);
+
+
+      // tooltip functionality when mouse hovers over country
+      function mouseEntersPlot() {
+
+        tooltip.style("visibility", "visible")
+
+        let country = d3.select(this);
+        let countryId = country.datum().id;
+
+
+        var mo = topojson.mesh(world, world.objects.countries1, function (a, b) { return a.id === countryId || b.id === countryId; });
+
+        momesh.datum(mo).attr("d", path)
+
+        txt.text(idToCountry[countryId]);
+        txt2.text(countryData[idToCountry[countryId]]);
+
+        let center = path.centroid(country.datum());
+
+        let xPos = center[0];
+        let yPos = center[1] - tooltipHeight * 1.5;
+        if (yPos + tooltipHeight > height - 10) {
+          yPos = yPos - (tooltipHeight * 1.5);
+        }
+        tooltip.raise();
+        tooltip.attr("transform", `translate(${xPos},${yPos})`);
+
+
+      }
+      // tooltip functionality when mouse leaves country
+      function mouseLeavesPlot() {
+
+        tooltip.style("visibility", "hidden");
+
+        let state = d3.select(this);
+        momesh.attr("d", "");
+
+      }
+
+
+      // making legend for map
+      function drawLegend(legend, legendColorScale) {
+        const legendWidth = legend.attr("width");
+        const legendHeight = legend.attr("height");
+        const legendMinMax = d3.extent(legendColorScale.domain());
+        const barHeight = 60;
+        const stepSize = 4;
+
+        const pixelScale = d3.scaleLinear().domain([0, legendWidth - 40]).range([legendMinMax[0] - 1, legendMinMax[1] + 1]); // In this case the "data" are pixels, and we get numbers to use in colorScale
+        const barScale = d3.scaleLinear().domain([legendMinMax[0] - 1, legendMinMax[1] + 1]).range([0, legendWidth - 40]);
+        const barAxis = d3.axisBottom(barScale);
+
+        if (legendColorScale.hasOwnProperty('quantiles')) {
+          // Use the quantile breakpoints plus the min and max of the scale as tick values
+          barAxis.tickValues(legendColorScale.quantiles().concat(legendMinMax));
+        }
+        legend.append("g")
+          .attr("class", "colorbar axis")
+          .attr("transform", "translate(" + (20) + "," + (barHeight + 5) + ")")
+          .call(barAxis);
+        // Draw rects of color down the bar
+        let bar = legend.append("g").attr("transform", "translate(" + (20) + "," + (0) + ")")
+        for (let i = 0; i < legendWidth - 40; i = i + stepSize) {
+          bar.append("rect")
+            .attr("x", i)
+            .attr("y", 0)
+            .attr("width", stepSize)
+            .attr("height", barHeight)
+            .style("fill", legendColorScale(pixelScale(i))); // pixels => countData => color
+        }
+        // Put lines in to mark actual min and max of our data
+        bar.append("line").attr("stroke", "white").attr("stroke-width", 3).attr("x1", barScale(legendMinMax[0])).attr("x2", barScale(legendMinMax[0])).attr("y1", 0).attr("y1", barHeight + 4);
+        bar.append("line").attr("stroke", "white").attr("stroke-width", 3).attr("x1", barScale(legendMinMax[1])).attr("x2", barScale(legendMinMax[1])).attr("y1", 0).attr("y1", barHeight + 4);
+      }
+
+
+      //barchart
+      const svgchart = d3.select("svg#barchart");
+      const margin = { top: 10, right: 10, bottom: 50, left: 50 };
+      const chartWidth = width - margin.left - margin.right;
+      const chartHeight = height - margin.top - margin.bottom;
+
+      let annotations = svgchart.append("g").attr("id", "annotations");
+      let chartArea = svgchart.append("g").attr("id", "points")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
+
+
+      d3.select("#mlabel").raise();
+
+      const topcountries = {};
+
+      let measures = ["Ladder score", "Logged GDP per capita", "Social support",
+        "Freedom to make life choices", "Perceptions of corruption"];
+
+      let yScale = d3.scaleLinear()
+        .domain([0, 1])
+        .range([chartHeight, 0]);
+
+      let leftAxis = d3.axisLeft(yScale).tickFormat(d3.format('.0'));
+      let leftGridlines = d3.axisLeft(yScale)
+        .tickSize(-chartWidth - 10)
+        .tickFormat("")
+
+      // let yAxis = d3.axisLeft()
+      let yAxisG = annotations.append("g")
+        .attr("class", "y axis")
+        .attr("transform", `translate(${margin.left - 10},${margin.top})`)
+
+      let yGridlines = annotations.append("g")
+        .attr("class", "y gridlines")
+        .attr("transform", `translate(${margin.left - 10},${margin.top})`)
+
+      let bottomAxis = d3.axisBottom()
+      let bottomAxisG = annotations.append("g")
+        .attr("class", "x axis")
+        .attr("transform", `translate(${margin.left},${chartHeight + margin.top + 10})`);
+
+      function updateTitle(measure) {
+        d3.select("#bartitle").text(measure);
+      }
+      function updateBarsAnimated(measure) {
+
+        let data = {};
+        let topcountries = {};
+
+        happinessData.forEach(d => {
+          data[d["Country name"]] = d[measure];
+        });
+
+        d3.selectAll(".countries").on("click", function () {
+
+          let country = d3.select(this);
+
+          let countryId = country.datum().id;
+
+          addCountry(idToCountry[countryId], happinessData);
+          console.log(countryList);
+          console.log(topcountries);
+          newData = happinessData.filter((d) => { return (d["Country name"] in topcountries) });
+          console.log(newData);
+          const countries = d3.map(happinessData, d => topcountries[d['Country name']]);
+          console.log(countries);
+          const countryScale = d3.scaleBand()
+            .domain(countryList)
+            .range([0, chartWidth])
+            .padding(0.05);
+
+          bottomAxis.scale(countryScale)
+          bottomAxisG.transition().call(bottomAxis);
+
+          // setting domain and range for measures
+          if (measure == "Logged GDP per capita") {
+            yScale = d3.scaleLinear()
+              .domain([0, 12])
+              .range([chartHeight, 0]);
+            leftAxis = d3.axisLeft(yScale).tickFormat(d3.format("d"));
+          } else if (measure == "Healthy life expectancy") {
+            yScale = d3.scaleLinear()
+              .domain([0, 80])
+              .range([chartHeight, 0]);
+            leftAxis = d3.axisLeft(yScale).tickFormat(d3.format("d"));
+          } else if (measure == "Ladder score") {
+            yScale = d3.scaleLinear()
+              .domain([0, 10])
+              .range([chartHeight, 0]);
+            leftAxis = d3.axisLeft(yScale).tickFormat(d3.format("d"));
+          } else {
+            yScale = d3.scaleLinear()
+              .domain([0, 1])
+              .range([chartHeight, 0]);
+            leftAxis = d3.axisLeft(yScale).tickFormat(d3.format('.0%'));
+          }
+
+          leftGridlines = d3.axisLeft(yScale)
+            .tickSize(-chartWidth - 10)
+            .tickFormat("")
+
+          leftAxis.scale(yScale)
+          yAxisG.transition().call(leftAxis);
+          yGridlines.transition().call(leftGridlines);
+
+          // draw bars based on measure
+          chartArea.selectAll('rect.bar').data(newData, d => topcountries[d["Country name"]])
+            .join(enter => enter.append('rect')
+              .attr('class', 'bar')
+              .attr("fill", "steelblue")
+              .attr("x", d => countryScale(d["Country name"]))
+              .attr("y", d => yScale([d[measure]]))
+              .attr("height", d => yScale(0) - yScale(d[measure]))
+              .attr("width", countryScale.bandwidth())
+              .attr("opacity", 0) // Set opacity low, then animate to 1 to make them fade in
+              .call(enter => enter.transition().attr('opacity', 1)),
+              update => update.call(update => update.transition()  // Animate resizing and movement
+                .attr("fill", "steelblue")
+                .attr("x", d => countryScale(d["Country name"]))
+                .attr("y", d => yScale([d[measure]]))
+                .attr("height", d => yScale(0) - yScale(d[measure]))
+                .attr("width", countryScale.bandwidth())),
+
+              exit => exit.call(exit => exit.transition().attr('opacity', 0).remove()))
+            .on("mouseover", function (d) {
+              let title = d3.select(this).datum()[measure]
+              let xlabel = d3.select(this).datum()["Country name"]
+              d3.select("#mlabel")
+                .attr("x", countryScale(xlabel) + 100)
+                .attr("y", yScale(title) - 5)
+                .text(title);
+              d3.select(this).attr("fill", "#cc5500");
+
+            })
+
+            .on("mouseout", function (d) {
+              d3.select("#mlabel").text("")
+              d3.select(this).attr("fill", "steelblue");
+            });
+
+        })
+
+        // add country to topcountries list
+        function addCountry(countryChosen, countries) {
+          happinessData.forEach(d => {
+            if (d["Country name"] == countryChosen) {
+              countryList.push(countryChosen);
+              topcountries[countryChosen] = countryChosen;
+            }
+          });
+
+
+        }
+
+
+        var countryList = Object.keys(topcountries);
+
+        console.log(topcountries);
+        console.log(countryList);
+        newData = happinessData.filter((d) => { return (d['Country name'] in topcountries) });
+        console.log(newData);
+        const countries = d3.map(newData, d => topcountries[d['Country name']]);
+        console.log(countries);
+        const countryScale = d3.scaleBand()
+          .domain(countryList)
+          .range([0, chartWidth])
+          .padding(0.05);
+
+        bottomAxis.scale(countryScale)
+        bottomAxisG.transition().call(bottomAxis);
+
+        // change y scale based on measure
+        if (measure == "Logged GDP per capita") {
+          yScale = d3.scaleLinear()
+            .domain([0, 12])
+            .range([chartHeight, 0]);
+          leftAxis = d3.axisLeft(yScale).tickFormat(d3.format("d"));
+        } else if (measure == "Healthy life expectancy") {
+          yScale = d3.scaleLinear()
+            .domain([0, 80])
+            .range([chartHeight, 0]);
+          leftAxis = d3.axisLeft(yScale).tickFormat(d3.format("d"));
+        } else {
+          yScale = d3.scaleLinear()
+            .domain([0, 1])
+            .range([chartHeight, 0]);
+          leftAxis = d3.axisLeft(yScale).tickFormat(d3.format('.0%'));
+        }
+
+        leftGridlines = d3.axisLeft(yScale)
+          .tickSize(-chartWidth - 10)
+          .tickFormat("")
+
+        leftAxis.scale(yScale)
+        yAxisG.transition().call(leftAxis);
+        yGridlines.transition().call(leftGridlines);
+
+        chartArea.selectAll('rect.bar').data(newData, d => topcountries[d["Country name"]])
+          .join(enter => enter.append('rect')
+            .attr('class', 'bar')
+            .attr("fill", "steelblue")
+            .attr("x", d => countryScale(d["Country name"]))
+            .attr("y", d => yScale([d[measure]]))
+            .attr("height", d => yScale(0) - yScale(d[measure]))
+            .attr("width", countryScale.bandwidth())
+            .attr("opacity", 0) // Set opacity low, then animate to 1 to make them fade in
+            .call(enter => enter.transition().attr('opacity', 1)),
+            update => update.call(update => update.transition()  // Animate resizing and movement
+              .attr("fill", "steelblue")
+              .attr("x", d => countryScale(d["Country name"]))
+              .attr("y", d => yScale([d[measure]]))
+              .attr("height", d => yScale(0) - yScale(d[measure]))
+              .attr("width", countryScale.bandwidth())),
+
+            exit => exit.call(exit => exit.transition().attr('opacity', 0).remove()))
+          .on("mouseover", function (d) {
+            let title = d3.select(this).datum()[measure]
+            let xlabel = d3.select(this).datum()["Country name"]
+            d3.select("#mlabel")
+              .attr("x", countryScale(xlabel) + 100)
+              .attr("y", yScale(title) - 5)
+              .text(title);
+            d3.select(this).attr("fill", "#cc5500");
+
+          })
+
+          .on("mouseout", function (d) {
+            d3.select("#mlabel").text("")
+            d3.select(this).attr("fill", "steelblue");
+          });
+
+
+      }
+
+      //buttons
+      measures.forEach(d => {
+        d3.select("div#button-bar")
+          .append("button")
+          .text(d)
+          .on("click", function () {
+            //call updateBars to update the chart on click
+            updateBarsAnimated(d);
+            updateTitle(d);
+          })
+      });
+
+    }
+    data()
+
+  </script>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+    <footer id="fh5co-footer" role="contentinfo">
+        <div class="container">
+            <div class="row copyright">
+                <div class="col-md-12 text-center">
+
+                    <ul class="fh5co-social-icons">
+                        <li><a href="https://twitter.com/ariyaaaf"><i class="icon-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com/ariya.feng"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ariyafeng"><i class="icon-linkedin"></i></a></li>
+                        <li><a href="https://github.com/ariyafeng"><i class="icon-github"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    </div>
+
+	</body>
+</html>
